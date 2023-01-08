@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\HomeController;
+use FontLib\Table\Type\name;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,4 +21,5 @@ Route::get('/', function () {
 Route::get('/1', function () {
     return view('welcome');
 });
+Route::get('/generador',[HomeController::class,'generar'])->name('generar');
 

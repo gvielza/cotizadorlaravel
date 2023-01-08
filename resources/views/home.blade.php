@@ -9,5 +9,8 @@
 </head>
 <body>
 <h1>Cotizador!</h1>
+<a href="{{route('generar')}}"><button >Generar pdf</button></a>
+
+
 </body>
 </html>
