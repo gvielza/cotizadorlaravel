@@ -17,9 +17,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('home');
-});
-Route::get('/1', function () {
-    return view('welcome');
-});
+})->name('home');
 Route::get('/generador',[HomeController::class,'generar'])->name('generar');
+Route::get('/imprimir',[HomeController::class,'imprimir'])->name('imprimir');
 

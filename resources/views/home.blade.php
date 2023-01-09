@@ -7,10 +7,9 @@
     <title class="sm-2">Cotizador</title>
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-<h1>Cotizador!</h1>
-<a href="{{route('generar')}}"><button >Generar pdf</button></a>
-
-
+<body class="container mx-auto px-4 flex flex-col justify-center items-center" >
+    <div >
+        <h1 >Cotizador!</h1><br>
+        <a href="{{route('generar')}}"><button class="rounded-md border-solid border-4 border-light-blue-900 hover:bg-blue-100">Generar pdf</button></a>
 </body>
 </html>

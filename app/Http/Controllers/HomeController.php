@@ -9,22 +9,19 @@ use Illuminate\Support\Facades\Date;
 
 class HomeController extends Controller
 {
-    public function showWelcome()
+    public function generar()
     {
-        return view('bienvenido');
+        return view('generador');
     }
 
-    public function generar()
+    public function imprimir()
     {
         $date=new DateTime();
         $view =
             '<h1>Hola papotico</h1><br>
-            {{$date}} '
+            '
 
         ;
-
-
-
 
         $pdf = new Dompdf;
         $pdf->loadHtml($view);
