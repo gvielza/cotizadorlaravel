@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\CatController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\WeatherController;
 use FontLib\Table\Type\name;
 use Illuminate\Support\Facades\Route;
 
@@ -21,4 +23,5 @@ Route::get('/', function () {
 Route::get('/generador',[HomeController::class,'generar'])->name('generar');
 Route::get('/imprimir',[HomeController::class,'imprimir'])->name('imprimir');
 Route::get('/consumir',[HomeController::class,'consumir'])->name('consumir');
+Route::get('/cat',[CatController::class,'show'])->name('cat');
 

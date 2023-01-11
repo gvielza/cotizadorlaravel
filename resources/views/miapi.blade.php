@@ -8,5 +8,7 @@
 </head>
 <body>
 <h1>ejemplo de consumo de API</h1>
+
+<p>La temperatura actual es: {{$gatos['1/url']}}</p>
 </body>
 </html>

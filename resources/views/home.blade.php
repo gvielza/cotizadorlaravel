@@ -12,10 +12,12 @@
         }
     </style>
 </head>
-<body class="container mx-auto px-4 flex flex-col justify-center items-center" >
+<body  class=" flex justify-center ">
     <div >
         <h1 >Cotizador!</h1><br>
         <a href="{{route('generar')}}"><button class="rounded-md border-solid border-4 border-light-blue-100 hover:bg-blue-300 my-8">Generar pdf</button></a>
-        <br><a href="{{route('consumir')}}"><button class="rounded-md border-solid border-4 border-light-blue-100 hover:bg-blue-300">consumir API</button></a>
-</body>
+
+        <br><a href="{{route('cat')}}"><button class="rounded-md border-solid border-4 border-light-blue-100 hover:bg-blue-300">API gatos(diferentes)</button></a>
+
+    </div>    </body>
 </html>
