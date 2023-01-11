@@ -28,4 +28,7 @@ class HomeController extends Controller
         $pdf->render();
         $pdf->stream('nuevo_'.$date->format('Y-m-d H:i:s'));
     }
+    public function consumir(){
+        return view("miapi");
+    }
 }

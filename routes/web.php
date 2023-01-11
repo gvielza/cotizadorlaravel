@@ -20,4 +20,5 @@ Route::get('/', function () {
 })->name('home');
 Route::get('/generador',[HomeController::class,'generar'])->name('generar');
 Route::get('/imprimir',[HomeController::class,'imprimir'])->name('imprimir');
+Route::get('/consumir',[HomeController::class,'consumir'])->name('consumir');
 
