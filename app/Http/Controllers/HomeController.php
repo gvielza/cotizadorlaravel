@@ -2,10 +2,12 @@
 
 namespace App\Http\Controllers;
 
+
 use DateTime;
 use Illuminate\Http\Request;
 use Dompdf\Dompdf;
-use Illuminate\Support\Facades\Date;
+
+use Barryvdh\DomPDF\Facade\Pdf as FacadePdf;
 
 class HomeController extends Controller
 {
@@ -26,6 +28,17 @@ class HomeController extends Controller
         $pdf->render();
         $pdf->stream('nuevo_' . $date->format('Y-m-d H:i:s'));
     }
+    public function imprimirvista(){
+        view()->share('generador');
+        $pdf=FacadePdf::loadView('generador');
+        return $pdf->download('archivo.pdf');
+    }public function imprimirvista2(){
+        view()->share('generador');
+        $pdf=FacadePdf::loadView('home');
+        return $pdf->download('archivo.pdf');
+    }
+
+
     public function consumir()
     {
         //api de gatos

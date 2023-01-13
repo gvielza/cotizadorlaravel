@@ -18,6 +18,9 @@
         <a href="{{route('generar')}}"><button class="rounded-md border-solid border-4 border-light-blue-100 hover:bg-blue-300 my-8">Generar pdf</button></a>
 
         <br><a href="{{route('cat')}}"><button class="rounded-md border-solid border-4 border-light-blue-100 hover:bg-blue-300">API gatos(diferentes)</button></a>
+        <br>
+        <br><a href="{{route('index')}}"><button class="rounded-md border-solid border-4 border-light-blue-100 hover:bg-blue-300">API CLIMA 2</button></a>
+        <br><br><a href="{{route('imprimirvista2')}}"><button class="rounded-md border-solid border-4 border-light-blue-100 hover:bg-blue-300">imprimir esta vista</button></a>
 
     </div>    </body>
 </html>

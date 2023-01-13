@@ -22,6 +22,13 @@ Route::get('/', function () {
 })->name('home');
 Route::get('/generador',[HomeController::class,'generar'])->name('generar');
 Route::get('/imprimir',[HomeController::class,'imprimir'])->name('imprimir');
-Route::get('/consumir',[HomeController::class,'consumir'])->name('consumir');
+Route::get('/imprimirvista',[HomeController::class,'imprimirvista'])->name('imprimirvista');
+Route::get('/imprimirvista2',[HomeController::class,'imprimirvista2'])->name('imprimirvista2');
+Route::get('/consumir',[WeatherController::class,'index'])->name('index');
+
 Route::get('/cat',[CatController::class,'show'])->name('cat');
+
+//Route::get('/', [WeatherController::class, 'show']);
+Route::get('/search', [WeatherController::class, 'search'])->name('search');
+
 

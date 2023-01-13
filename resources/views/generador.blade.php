@@ -9,6 +9,9 @@
 <body>
     <h1>Esta página la usaremos para imprimir un pdf con DOMPDF</h1>
     <a href="{{route('imprimir')}}"><button>Imprime un pdf aquí</button></a>
+    <a href="{{route('imprimirvista')}}"><button>Aqui impremiremos esta vista</button></a>
+
+
 
 </body>
 </html>
